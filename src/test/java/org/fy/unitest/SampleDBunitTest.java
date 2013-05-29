@@ -15,7 +15,7 @@ import org.dbunit.operation.DatabaseOperation;
 /**
  * DBunit使用测试类
  * 
- * @author Yung·Fu (fuyung AT aliyun DOT com)
+ * @author Yung·Fu (fuyung AT gmail DOT com)
  * @version 1.0.0 2013-5-26
  * 
  */
