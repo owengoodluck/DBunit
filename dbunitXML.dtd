@@ -1,0 +1,17 @@
+<!ELEMENT dataset (
+    task*,
+    users*)>
+
+<!ELEMENT task EMPTY>
+<!ATTLIST task
+    id CDATA #REQUIRED
+    action CDATA #IMPLIED
+>
+
+<!ELEMENT users EMPTY>
+<!ATTLIST users
+    id CDATA #REQUIRED
+    username CDATA #IMPLIED
+    password CDATA #IMPLIED
+>
+
