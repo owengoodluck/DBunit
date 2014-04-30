@@ -26,7 +26,7 @@ public class DBunitTest {
 				"jdbc:mysql://localhost:3306/dbunit", "root", "root");
 		IDatabaseConnection databaseConnection = new DatabaseConnection(
 				connection);
-		
+
 		// 根据SQL导出部分数据
 		QueryDataSet queryDataSet = new QueryDataSet(databaseConnection);
 		queryDataSet.addTable("users",
