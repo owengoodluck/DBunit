@@ -23,7 +23,7 @@ public class DBunitTest {
 	public static void main(String[] args) throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/dbunit", "root", "1234");
+				"jdbc:mysql://localhost:3306/dbunit", "root", "root");
 		IDatabaseConnection databaseConnection = new DatabaseConnection(
 				connection);
 		
