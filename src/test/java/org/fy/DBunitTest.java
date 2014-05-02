@@ -1,8 +1,5 @@
 package org.fy;
 
-import java.io.FileOutputStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
 
 import org.dbunit.database.DatabaseConnection;
 import org.dbunit.database.IDatabaseConnection;
@@ -10,6 +7,10 @@ import org.dbunit.database.QueryDataSet;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatDtdDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSet;
+
+import java.io.FileOutputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 /**
  * DBUnit测试,将表生成对应的XML文件
@@ -23,7 +24,7 @@ public class DBunitTest {
 	public static void main(String[] args) throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/dbunit", "root", "root");
+                "jdbc:mysql://localhost:3306/dbunit", "root", "root");
 		IDatabaseConnection databaseConnection = new DatabaseConnection(
 				connection);
 
@@ -32,7 +33,7 @@ public class DBunitTest {
 		queryDataSet.addTable("users",
 				"select password from users where id = 10");
 		FlatXmlDataSet.write(queryDataSet, new FileOutputStream(
-				"dbunitXMLConditation.xml"));
+                "dbunitXMLConditation.xml"));
 		
 		
 		// 导出整个库的数据

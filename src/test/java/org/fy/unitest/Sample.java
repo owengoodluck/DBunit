@@ -1,12 +1,12 @@
 package org.fy.unitest;
 
-import java.io.FileInputStream;
-
 import org.dbunit.DBTestCase;
 import org.dbunit.PropertiesBasedJdbcDatabaseTester;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSet;
 import org.dbunit.operation.DatabaseOperation;
+
+import java.io.FileInputStream;
 
 public class Sample extends DBTestCase {
 
